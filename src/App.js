@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-
-import Post from "./posts.js";
+import HeaderMain from "./headerMain";
+import Post from "./post.js";
 
 function App() {
   const [nasaData, updateData] = useState({});
@@ -14,25 +14,27 @@ function App() {
 
       .then((response) => {
         // displaying data from api for inspection
-        console.log(res.data);
+        console.log(response.data);
 
-        updateData(res.data);
+        updateData(response.data);
 
         console.log(`${nasaData} is the data`);
       })
 
       .catch((err) => {
-        console.log("Yoda says: return you must!");
+        console.log("Yoda says: return you must");
       });
   });
 
   return (
     <div className='App'>
+      <HeaderMain date={nasaData.date} />
+
       <Post
         title={nasaData.title}
         date={nasaData.date}
         url={nasaData.url}
-        summary={nasaData.explanation}
+        desc={nasaData.explanation}
       />
     </div>
   );
