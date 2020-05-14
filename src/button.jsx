@@ -8,8 +8,8 @@ const StyledButton = styled.button`
   border-radius: 24px;
   width: 180px;
   height: 52px;
-  margin-top: 60px;
-  margin-bottom: 32px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
   &:hover {
     background-color: #ffffff;

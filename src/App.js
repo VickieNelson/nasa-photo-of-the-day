@@ -6,9 +6,7 @@ import Post from "./post.js";
 import styled from "styled-components";
 
 const StyledApp = styled.div`
-  width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
+  margin: 0;
 `;
 
 //App component

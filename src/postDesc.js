@@ -10,7 +10,8 @@ const Title = styled.p`
 
 const Paragraph = styled.p`
   font-family: "Roboto Mono", monospace, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  width: 60%;
 `;
 
 const PostDivContent = styled.div`
@@ -19,12 +20,13 @@ const PostDivContent = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 60px;
 `;
 
 const PostContent = styled.div`
   text-align: left;
   color: #ffffff;
-  width: 700px;
+  width: 90%;
 `;
 
 export default function PostDesc(props) {
