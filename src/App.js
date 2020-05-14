@@ -3,6 +3,9 @@ import "./App.css";
 import axios from "axios";
 import HeaderMain from "./headerMain";
 import Post from "./post.js";
+import styled from "styled-components";
+
+//App component
 
 function App() {
   const [nasaData, updateData] = useState({});
@@ -11,7 +14,7 @@ function App() {
     axios
 
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=PlbdkFB5njI6kjOtMkMS78aGvaqYxDlq5eOtpzA2"
+        "https://api.nasa.gov/planetary/apod?api_key=BQwCtHRKT523dTUeah3PJ4OrlnEErMI6raAtNnnN"
       )
 
       //alt with demo key

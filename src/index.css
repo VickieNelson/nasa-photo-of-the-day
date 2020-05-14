@@ -3,12 +3,28 @@ Nasa font-family: 'Space Mono', monospace;
 */
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: url(img/bg.jpg) no-repeat center center fixed;
+  font-family: "Roboto Mono", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 6rem;
+  font-family: "Space Mono", monospace, sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Space Mono", monospace, sans-serif;
+}
+
+.summary {
+  font-family: "Roboto Mono", monospace, sans-serif;
+  font-weight: bold;
 }
 
 code {
