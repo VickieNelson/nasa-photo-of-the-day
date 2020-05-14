@@ -12,13 +12,13 @@ body {
 .headerDiv {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 100%;
   margin: 0;
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: "Space Mono", monospace, sans-serif;
   color: #ffffff;
 }
@@ -45,16 +45,16 @@ code {
   width: 100%;
 }
 
-.postDescDiv {
+/* .postDescDiv {
   margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
+} */
+/* 
 .postDesc {
   text-align: left;
   color: #ffffff;
   width: 700px;
-}
+} */

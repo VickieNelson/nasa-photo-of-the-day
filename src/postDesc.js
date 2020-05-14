@@ -3,20 +3,41 @@ import React from "react";
 import styled from "styled-components";
 import StyledButton from "./button";
 
+const Title = styled.p`
+  font-family: "Roboto Mono", monospace, sans-serif;
+  font-size: 1.6rem;
+`;
+
+const Paragraph = styled.p`
+  font-family: "Roboto Mono", monospace, sans-serif;
+  font-size: 1.4rem;
+`;
+
+const PostDivContent = styled.div`
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+const PostContent = styled.div`
+  text-align: left;
+  color: #ffffff;
+  width: 700px;
+`;
+
 export default function PostDesc(props) {
   return (
-    <div className='postDescDiv'>
-      <div>
-        <p>
+    <PostDivContent className='postDescDiv'>
+      <PostContent>
+        <Title>
           <span className='summary'>"Summary:"</span>{" "}
-        </p>
-      </div>{" "}
-      <div>
-        <p className='postDesc'>{props.desc}</p>{" "}
-      </div>{" "}
-      {/* <div a href='https://www.nasa.gov/multimedia/imagegallery/iotd.html'>
-        <StyledButton>More images</StyledButton>
-      </div> */}
+        </Title>
+      </PostContent>{" "}
+      <PostContent>
+        <Paragraph className='postDesc'>{props.desc}</Paragraph>{" "}
+      </PostContent>{" "}
       <div className='button'>
         <StyledButton>
           <a href='https://www.nasa.gov/multimedia/imagegallery/iotd.html'>
@@ -24,7 +45,7 @@ export default function PostDesc(props) {
           </a>
         </StyledButton>
       </div>
-    </div> //closes PostDesc
+    </PostDivContent> //closes PostDesc
   );
 }
 

@@ -5,6 +5,12 @@ import HeaderMain from "./headerMain";
 import Post from "./post.js";
 import styled from "styled-components";
 
+const StyledApp = styled.div`
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+`;
+
 //App component
 
 function App() {
@@ -35,16 +41,18 @@ function App() {
   });
 
   return (
-    <div className='App'>
-      <HeaderMain date={nasaData.date} />
+    <StyledApp>
+      <div className='App'>
+        <HeaderMain date={nasaData.date} />
 
-      <Post
-        title={nasaData.title}
-        date={nasaData.date}
-        url={nasaData.url}
-        desc={nasaData.explanation}
-      />
-    </div>
+        <Post
+          title={nasaData.title}
+          date={nasaData.date}
+          url={nasaData.url}
+          desc={nasaData.explanation}
+        />
+      </div>
+    </StyledApp>
   );
 }
 
