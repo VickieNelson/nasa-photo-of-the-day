@@ -26,7 +26,7 @@ h2 {
 h3 {
   font-size: 2rem;
   font-family: "Space Mono", monospace, sans-serif;
-  color: #ffffff;
+  color: silver;
 }
 
 .summary {
@@ -42,12 +42,19 @@ code {
 .App {
   color: #ffffff;
   font-family: "Roboto Mono", monospace, sans-serif;
-  width: 50%;
-  text-align: left;
+  width: 100%;
 }
 
 .postDescDiv {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.postDesc {
+  text-align: left;
+  color: #ffffff;
+  width: 700px;
 }

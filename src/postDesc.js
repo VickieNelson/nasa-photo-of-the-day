@@ -1,6 +1,7 @@
 import React from "react";
 // import "./post.css";
 import styled from "styled-components";
+import StyledButton from "./button";
 
 export default function PostDesc(props) {
   return (
@@ -9,14 +10,21 @@ export default function PostDesc(props) {
         <p>
           <span className='summary'>"Summary:"</span>{" "}
         </p>
-      </div>
+      </div>{" "}
       <div>
         <p className='postDesc'>{props.desc}</p>{" "}
-      </div>
+      </div>{" "}
+      {/* <div a href='https://www.nasa.gov/multimedia/imagegallery/iotd.html'>
+        <StyledButton>More images</StyledButton>
+      </div> */}
       <div className='button'>
-        <button>Visit NASA.gov</button>
+        <StyledButton>
+          <a href='https://www.nasa.gov/multimedia/imagegallery/iotd.html'>
+            More images{" "}
+          </a>
+        </StyledButton>
       </div>
-    </div>
+    </div> //closes PostDesc
   );
 }
 
@@ -30,6 +38,6 @@ Font size
 font color
 parag width
 text alignment
-add and style button to "visit nasa" link https://www.nasa.gov/
+add and style button to "more images" should link to new tab https://www.nasa.gov/multimedia/imagegallery/iotd.html
 
 */

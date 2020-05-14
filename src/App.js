@@ -11,7 +11,6 @@ function App() {
   const [nasaData, updateData] = useState({});
 
   useEffect(() => {
-    
     axios
 
       .get(
@@ -32,8 +31,7 @@ function App() {
 
       .catch((err) => {
         console.log("Yoda says: return you must");
-      })
-      )
+      });
   });
 
   return (
@@ -47,9 +45,7 @@ function App() {
         desc={nasaData.explanation}
       />
     </div>
-  
   );
-
-  }
+}
 
 export default App;
