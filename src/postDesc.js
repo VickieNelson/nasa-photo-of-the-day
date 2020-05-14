@@ -5,10 +5,17 @@ import styled from "styled-components";
 export default function PostDesc(props) {
   return (
     <div className='postDescDiv'>
-      <p className='postDesc'>
-        <span className='summary'>"Summary:</span> {props.desc}"
-      </p>
-      <button>Visit NASA.gov</button>
+      <div>
+        <p>
+          <span className='summary'>"Summary:"</span>{" "}
+        </p>
+      </div>
+      <div>
+        <p className='postDesc'>{props.desc}</p>{" "}
+      </div>
+      <div className='button'>
+        <button>Visit NASA.gov</button>
+      </div>
     </div>
   );
 }
