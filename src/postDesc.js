@@ -22,7 +22,7 @@ const PostDivContent = styled.div`
   align-items: center;
   flex-direction: column;
   margin-bottom: 60px;
-  margin-left: 5%;
+  margin-left: 3%;
 `;
 
 const PostContent = styled.div`
