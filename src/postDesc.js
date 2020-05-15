@@ -5,13 +5,14 @@ import StyledButton from "./button";
 
 const Title = styled.p`
   font-family: "Roboto Mono", monospace, sans-serif;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
+  text-align: center;
 `;
 
 const Paragraph = styled.p`
   font-family: "Roboto Mono", monospace, sans-serif;
   font-size: 1.2rem;
-  width: 60%;
+  width: 80%;
 `;
 
 const PostDivContent = styled.div`
@@ -21,12 +22,17 @@ const PostDivContent = styled.div`
   align-items: center;
   flex-direction: column;
   margin-bottom: 60px;
+  margin-left: 5%;
 `;
 
 const PostContent = styled.div`
-  text-align: left;
+  text-align: center;
   color: #ffffff;
-  width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export default function PostDesc(props) {
